@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_marginStart="@dimen/dim_24dp"
+        android:layout_marginLeft="@dimen/dim_24dp"
+        android:layout_marginTop="@dimen/dim_32dp"
+        android:layout_marginEnd="@dimen/dim_8dp"
+        android:layout_marginRight="@dimen/dim_8dp"
+        android:hint="@string/edit_name"
+        app:layout_constraintEnd_toStartOf="@+id/edit_surname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_surname"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_marginStart="@dimen/dim_8dp"
+        android:layout_marginLeft="@dimen/dim_8dp"
+        android:layout_marginTop="@dimen/dim_32dp"
+        android:layout_marginEnd="@dimen/dim_24dp"
+        android:layout_marginRight="@dimen/dim_24dp"
+        android:hint="@string/edit_surname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/edit_surname" />
+
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:text="@string/button_add_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_firstPassword"
+        tools:text="@string/button_add_user" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_24dp"
+        android:layout_marginLeft="@dimen/dim_24dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_24dp"
+        android:layout_marginRight="@dimen/dim_24dp"
+        android:ems="10"
+        android:hint="@string/edit_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name"
+        tools:text="@string/edit_email" />
+
+    <EditText
+        android:id="@+id/edit_firstPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_24dp"
+        android:layout_marginLeft="@dimen/dim_24dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_8dp"
+        android:layout_marginRight="@dimen/dim_8dp"
+        android:ems="10"
+        android:hint="@string/edit_firstPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/edit_secondPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        tools:text="@string/edit_firstPassword" />
+
+    <EditText
+        android:id="@+id/edit_secondPassword"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_8dp"
+        android:layout_marginLeft="@dimen/dim_8dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_24dp"
+        android:layout_marginRight="@dimen/dim_24dp"
+        android:ems="10"
+        android:hint="@string/edit_secondPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_firstPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        tools:text="@string/edit_secondPassword" />
+
+    <TextView
+        android:id="@+id/already_logged_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out_to_register_new_account"
+        android:textSize="@dimen/dim_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

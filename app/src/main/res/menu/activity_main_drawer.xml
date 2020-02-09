@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_addUser"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Register" />
+
+        <item
+            android:id="@+id/nav_loginUser"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Login" />
+
+        <item
+            android:id="@+id/nav_station"
+            android:icon="@drawable/ic_nature_black_24dp"
+            android:title="Stations" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favorites" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+        </menu>
+    </item>
+
+</menu>

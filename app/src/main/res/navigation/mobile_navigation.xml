@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_station">
+
+    <fragment
+        android:id="@+id/nav_station"
+        android:name="com.example.airapi.ui.station.StationFragment"
+        android:label="Stations"
+        tools:layout="@layout/fragment_station" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.airapi.ui.home.HomeFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_addUser"
+        android:name="com.example.airapi.ui.user.AddUserFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_user_add" />
+
+    <fragment
+        android:id="@+id/nav_loginUser"
+        android:name="com.example.airapi.ui.user.LoginUserFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_user_login" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.airapi.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+</navigation>

@@ -17,8 +17,13 @@ class SensorAdapter(val sensors: List<Model.Sensors>, val listener: (Model.Senso
     class SensorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(sensor: Model.Sensors, listener: (Model.Sensors) -> Unit) = with(itemView) {
             tv_id?.text = sensor.param.paramName.toString()
-            tv_params?.text = sensor.param.paramCode.toString()
+            //Log.i("key1",sensor.param.paramCode.toString())
+            //Log.i("key2",sensor.value1.key.toString())
+            //tv_params?.text = sensor.sensorData.key.toString()
         }
+
+
+
     }
 
     override fun getItemCount(): Int {

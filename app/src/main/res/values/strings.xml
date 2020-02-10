@@ -29,6 +29,7 @@
     <string name="bartek_poskart">Bartek Poskart</string>
     <string name="github_com_bartpos24">github.com/bartpos24</string>
     <string name="main_id">MAIN_ID</string>
+    <string name="main_id2">MAIN_ID2</string>
     <string name="login_first">Login to your account first.</string>
     <string name="registered">Registered. Now You can login</string>
     <string name="password_wrong">Passwords doesn\'t match.</string>

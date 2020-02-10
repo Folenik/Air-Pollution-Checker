@@ -11,4 +11,7 @@ interface ApiService {
 
     @GET("station/sensors/{id}")
     fun fetchAllSensors(@Path("id") id: Int): Call<List<Model.Sensors>>
+
+    @GET("data/getData/{id}")
+    fun fetchSensorData(@Path("id") id: Int): Call<Model.SensorData>
 }
